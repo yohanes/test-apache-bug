@@ -40,6 +40,7 @@ RUN ln -sf /dev/stdout /var/log/apache2/access.log \
     && ln -sf /dev/stderr /var/log/apache2/error.log
 
 COPY docker-entrypoint.sh /usr/local/bin/
+COPY anyscript.php /usr/share/
 
 # Ensure the entrypoint script is executable
 RUN chmod +x /usr/local/bin/docker-entrypoint.sh
